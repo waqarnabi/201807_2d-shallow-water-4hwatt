@@ -1,0 +1,18 @@
+WN, Glasgow, 2018.07.06
+-----------------------
+
+* Fortran code for 2D shallow water from Kampf's text.
+* Self-contained, no additional input files needed.
+
+
+BUILD
+-----
+
+* I've written a little perl build script, as I wanted to do some profiling experiments. 
+For help: 	./build.pl -h
+Build and run:	./build.pl -r 
+
+* Or, without using the script, for a simple build, the following should work:
+gfortran -c param.f95 sub.f95
+gfortran -o run.exe main.f95 param.o sub.o
+./run.exe

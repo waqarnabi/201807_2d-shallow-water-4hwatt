@@ -1,0 +1,23 @@
+WN, Glasgow, 2018.07.06
+-----------------------
+(waqarnabi@gmail.com)
+
+
+
+See README files in child folders for more details.
+
+./fortran
+----------
+* Fortran code for 2D shallow water from Kampf's text.
+* Self-contained, no additional input files needed.
+
+
+./opencl-hetero
+---------------
+* OpenCL code for the 2D shallow water model
+* Heterogenuous/portable code, tested on host-only (no opencl at all), cpu-as-device, gpu, and fpga.
+* Perl based build script can be used to target appropriate device.
+* Multiple functionally equivalent kernel versions (primarily to test effect of channels/pipes and smart-caching).
+
+
+
